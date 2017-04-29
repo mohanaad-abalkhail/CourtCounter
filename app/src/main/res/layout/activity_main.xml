@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.android.example.courtcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bigger_margin"
+            android:layout_marginRight="@dimen/bigger_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Al hilal Fc"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_Header"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/hilal" />
+
+            <TextView
+                android:id="@+id/scoreTeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/black_screen"
+                android:textSize="56sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bigger_margin"
+                android:onClick="addGoalForTeamA"
+                android:text="@string/Add_Goal" />
+
+            <TextView
+                android:id="@+id/foulTeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/black_screen"
+                android:textSize="56sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addFoulForTeamA"
+                android:text="@string/Add_Foul" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/grass_Green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bigger_margin"
+            android:layout_marginRight="@dimen/bigger_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Al nassr FC"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_Header"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/nasser" />
+
+            <TextView
+                android:id="@+id/scoreTeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/black_screen"
+                android:textSize="56sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bigger_margin"
+                android:onClick="addGoalForTeamB"
+                android:text="@string/Add_Goal" />
+
+            <TextView
+                android:id="@+id/foulTeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/black_screen"
+                android:textSize="56sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addFoulForTeamB"
+                android:text="@string/Add_Foul" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="@dimen/hedaer"
+        android:onClick="reset"
+        android:text="reset"
+        android:textAllCaps="true" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FOOTBALL FIELD</string>
+    <string name="Add_Goal">+1 Goal</string>
+    <string name="Add_Foul">+1 Foul</string>
+</resources>
